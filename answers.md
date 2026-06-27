@@ -161,7 +161,7 @@ git commit -m "Add features file"
  create mode 100644 features.txt
 ```
 
-**Screenshot:** *(Paste the screenshot of the commands and commit output here.)*
+![Q8 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20162328.png)
 
 ## Q9. Switch back to the `main/master` branch. Is `features.txt` visible? It should not be. Write the reason.
 
@@ -171,8 +171,6 @@ git commit -m "Add features file"
 git switch master
 ls
 ```
-
-> *(If your default branch is `main`, use `git switch main` instead.)*
 
 **Output (example):**
 
@@ -188,7 +186,7 @@ notes.txt
 
 `features.txt` was created and committed only on the `dev` branch. Since the `main/master` branch does not have that commit, the file is not present after switching back.
 
-**Screenshot:** *(Paste the screenshot of the commands and output here.)*
+![Q9 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20161222.png)
 
 ## Q10. Merge `dev` into `master`. After merging, take a screenshot of `git log --oneline`.
 
@@ -220,7 +218,7 @@ Fast-forward
 1a0b9c8 Initial commit
 ```
 
-**Screenshot:** *(Paste the screenshot of the `git log --oneline` output after merging here.)*
+![Q10 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20161444.png)
 
 ## Q11. Create a `.gitignore` file. Add `node_modules/` and `*.log` to it. Commit the file.
 
@@ -241,3 +239,102 @@ git commit -m "Add .gitignore"
 ```
 
 **Screenshot:** *(Paste the screenshot of the commands and commit output here.)*
+![Q11 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20161723.png)
+
+## Section C: GitHub Remote + Push/Pull
+
+## Q12. Create a new empty repository on GitHub named `git-assignment-YourName`. Do not initialize it with a README.
+
+**Steps:**
+
+1. Sign in to GitHub.
+2. Click **New Repository**.
+3. Enter the repository name:
+
+   ```
+   git-assignment-Dashami
+   ```
+4. Select the repository visibility.
+5. Leave **"Add a README file"** unchecked.
+6. Click **Create repository**.
+
+![Q12 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20163257.png)
+
+## Q13. Connect your local repository to the GitHub remote.
+
+**Commands:**
+
+```bash
+git remote add origin https://github.com/DashamiCI/git-assignment-Dashami.git
+git branch -M main
+git push -u origin main
+```
+
+**Output (example):**
+
+```text
+To https://github.com/DashamiCI/git-assignment-Dashami.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+```
+
+![Q13 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20163609.png)
+
+## Q14. Push your local code to GitHub.
+
+**Command:**
+
+```bash
+git push -u origin main
+```
+
+**Output (example):**
+
+```text
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (20/20), done.
+Total 20 (delta 5), reused 0 (delta 0)
+To https://github.com/<your-github-username>/git-assignment-Dashami.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+```
+
+![Q14 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20163816.png)
+
+## Q15. Go to GitHub and paste your repository link.
+
+**Repository Link:**
+
+```text
+https://github.com/DashamiCI/git-assignment-dashami
+```
+
+![Q15 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20164130.png)
+
+## Q16. Create a file directly on GitHub named `bugfix.txt` with content `Bug 1 fixed`. Run `git pull` locally to fetch that file.
+
+**Command:**
+
+```bash
+git pull origin main
+```
+
+**Output (example):**
+
+```text
+From https://github.com/<your-github-username>/git-assignment-Dashami
+ * branch            main       -> FETCH_HEAD
+Updating abc1234..def5678
+Fast-forward
+ bugfix.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bugfix.txt
+```
+
+![Q16 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20164546.png)
+
+## Section D: Undo, Conflicts & Collaboration
+
