@@ -238,7 +238,6 @@ git commit -m "Add .gitignore"
  create mode 100644 .gitignore
 ```
 
-**Screenshot:** *(Paste the screenshot of the commands and commit output here.)*
 ![Q11 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20161723.png)
 
 ## Section C: GitHub Remote + Push/Pull
@@ -454,7 +453,9 @@ Line from branch
 ```
 
 ![Q19 Screenshot 1](screenshots/outputs/Screenshot%202026-06-27%20170601.png)
+
 ![Q19 Screenshot 2](screenshots/outputs/Screenshot%202026-06-27%20170636.png)
+
 ![Q19 Screenshot 3](screenshots/outputs/Screenshot%202026-06-27%20170943.png)
 
 ## Q20. Fork a colleague's repository and clone it locally. Write the repository name in `answers.md`.
@@ -482,6 +483,7 @@ conflict-drill-team
 ```
 
 ![Q20 Screenshot 1](screenshots/outputs/Screenshot%202026-06-27%20171434.png)
+
 ![Q20 Screenshot 2](screenshots/outputs/Screenshot%202026-06-27%20165838.png)
 
 ## Q21. Add a collaborator to your `git-assignment-YourName` repository.
