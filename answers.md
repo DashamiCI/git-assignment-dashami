@@ -1,5 +1,7 @@
 # Git Assignment
 
+## Section A: Git Basics + Setup
+
 ## Q1. Check if Git is installed. What version do you have?
 
 **Command:**
@@ -119,3 +121,27 @@ git commit -m "Commit message"
 
 ![Q6 Screenshot 1](screenshots/outputs/Screenshot%202026-06-27%20153156.png)
 ![Q6 Screenshot 2](screenshots/outputs/Screenshot%202026-06-27%20153407.png)
+
+## Section B: Branching & Commits
+
+## Q7. Create a new branch named `dev` and switch to it. Show the branch list.
+
+**Commands:**
+
+```bash
+git branch dev
+git switch dev
+git branch
+```
+
+**Output (example):**
+
+```text
+* dev
+  master
+```
+
+> If your default branch is `main`, the output will show `main` instead of `master`.
+
+**Screenshot:** *(Paste the screenshot of the commands and the branch list here.)*
+
