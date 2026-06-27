@@ -24,7 +24,7 @@ git version 2.50.1.windows.1
 
 ```bash
 git config --global user.name "Dashami Ghosalkar"
-git config --global user.email "dashamighosalkar691@gmail.com"
+git config --global user.email "dashami.ghosalkar@cloverinfotech.com"
 git config --global --list
 ```
 
@@ -32,7 +32,7 @@ git config --global --list
 
 ```text
 user.name=Dashami Ghosalkar
-user.email=dashamighosalkar691@gmail.com
+user.email=dashami.ghosalkar@cloverinfotech.com
 ```
 
 ![Q2 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20143905.png)
@@ -264,7 +264,7 @@ git commit -m "Add .gitignore"
 **Commands:**
 
 ```bash
-git remote add origin https://github.com/DashamiCI/git-assignment-Dashami.git
+git remote add origin https://github.com/DashamiCI/git-assignment-dashami.git
 git branch -M main
 git push -u origin main
 ```
@@ -272,7 +272,7 @@ git push -u origin main
 **Output (example):**
 
 ```text
-To https://github.com/DashamiCI/git-assignment-Dashami.git
+To https://github.com/DashamiCI/git-assignment-dashami.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 ```
@@ -296,7 +296,7 @@ Delta compression using up to 8 threads.
 Compressing objects: 100% (15/15), done.
 Writing objects: 100% (20/20), done.
 Total 20 (delta 5), reused 0 (delta 0)
-To https://github.com/<your-github-username>/git-assignment-Dashami.git
+To https://github.com/DashamiCI/git-assignment-dashami.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 ```
@@ -324,7 +324,7 @@ git pull origin main
 **Output (example):**
 
 ```text
-From https://github.com/<your-github-username>/git-assignment-Dashami
+From https://github.com/DashamiCI/git-assignment-dashami
  * branch            main       -> FETCH_HEAD
 Updating abc1234..def5678
 Fast-forward
