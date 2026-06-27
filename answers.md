@@ -33,7 +33,7 @@ user.name=Dashami Ghosalkar
 user.email=dashamighosalkar691@gmail.com
 ```
 
-**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 143905.png
+![Q2 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20143905.png)
 
 ## Q3. Create a new folder `git-assignment-YourName` and run `git init` inside it. Check the status.
 
@@ -58,7 +58,7 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 144622.png
+![Q3 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20144622.png)
 
 ## Q4. Create a `README.md` file with content `# Git Assignment - YourName`. Stage it and commit with message `"Initial commit"`.
 
@@ -81,7 +81,7 @@ git log --oneline
 abc1234 Initial commit
 ```
 
-**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 145657.png
+![Q4 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20145657.png)
 
 ## Q5. Run `git log` and copy the hash ID of your first commit into `answers.md`.
 
@@ -99,7 +99,7 @@ a1b2c3d4e5f67890123456789abcdef12345678
 
 > Replace the above hash with the actual commit hash shown on your system.
 
-**Screenshot:** screenshots\outputs\Screenshot 2026-06-27 145855.png
+![Q5 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20145855.png)
 
 ## Q6. Perform a few changes and make five commits.
 
@@ -117,5 +117,5 @@ git commit -m "Commit message"
  1 file changed, 1 insertion(+)
 ```
 
-**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 153156.png
-screenshots/outputs/Screenshot 2026-06-27 153407.png
+![Q6 Screenshot 1](screenshots/outputs/Screenshot%202026-06-27%20153156.png)
+![Q6 Screenshot 2](screenshots/outputs/Screenshot%202026-06-27%20153407.png)
