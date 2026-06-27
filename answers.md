@@ -100,3 +100,21 @@ a1b2c3d4e5f67890123456789abcdef12345678
 > Replace the above hash with the actual commit hash shown on your system.
 
 **Screenshot:** screenshots\outputs\Screenshot 2026-06-27 145855.png
+
+## Q6. Perform a few changes and make five commits.
+
+**Commands:**
+
+```bash
+git add .
+git commit -m "Commit message"
+```
+
+**Output (example):**
+
+```text
+[master abc1234] Commit message
+ 1 file changed, 1 insertion(+)
+```
+
+**Screenshot:** *(Paste the screenshot of the `git log --oneline` output showing all commits here.)*
