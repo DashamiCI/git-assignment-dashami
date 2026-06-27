@@ -14,7 +14,7 @@ git --version
 git version 2.50.1.windows.1
 ```
 
-**Screenshot:** *(Paste the screenshot of the command and its output here.)*
+**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 143649.png
 
 ## Q2. Set your name and email in global config.
 
@@ -33,7 +33,7 @@ user.name=Dashami Ghosalkar
 user.email=dashamighosalkar691@gmail.com
 ```
 
-**Screenshot:** *(Paste the screenshot of the commands and their output here.)*
+**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 143905.png
 
 ## Q3. Create a new folder `git-assignment-YourName` and run `git init` inside it. Check the status.
 
@@ -58,7 +58,7 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-**Screenshot:** *(Paste the screenshot of the terminal showing the commands and output here.)*
+**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 144622.png
 
 ## Q4. Create a `README.md` file with content `# Git Assignment - YourName`. Stage it and commit with message `"Initial commit"`.
 
@@ -81,7 +81,7 @@ git log --oneline
 abc1234 Initial commit
 ```
 
-**Screenshot:** *(Paste the screenshot of the commands and output here.)*
+**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 145657.png
 
 ## Q5. Run `git log` and copy the hash ID of your first commit into `answers.md`.
 
@@ -99,4 +99,4 @@ a1b2c3d4e5f67890123456789abcdef12345678
 
 > Replace the above hash with the actual commit hash shown on your system.
 
-**Screenshot:** *(Paste the screenshot of the `git log` output here.)*
+**Screenshot:** screenshots\outputs\Screenshot 2026-06-27 145855.png
