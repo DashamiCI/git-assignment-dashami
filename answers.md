@@ -338,3 +338,62 @@ Fast-forward
 
 ## Section D: Undo, Conflicts & Collaboration
 
+## Q17. Add a line **"Testing undo"** to `README.md`. Do not stage it. Discard the changes using `git restore README.md`. Verify it worked.
+
+**Commands:**
+
+```bash
+echo "Testing undo" >> README.md
+git status
+git restore README.md
+git status
+```
+
+**Output (example):**
+
+Before `git restore`:
+
+```text
+On branch main
+Changes not staged for commit:
+  modified: README.md
+
+no changes added to commit
+```
+
+After `git restore`:
+
+```text
+On branch main
+nothing to commit, working tree clean
+```
+
+**Verification:** The changes to `README.md` were successfully discarded, and the working tree is clean.
+
+**Screenshot:** *(Paste the screenshot showing the `git status` output before and after `git restore`.)*
+
+## Q18. The last commit message was wrong. Change it to **"Initial commit - Added README"**.
+
+**Commands:**
+
+```bash
+git commit --amend -m "Initial commit - Added README"
+git log --oneline -1
+```
+
+**Output (example):**
+
+```text
+[main abc1234] Initial commit - Added README
+ Date: Sat Jun 27 15:30:10 2026 +0530
+ 1 file changed, 2 insertions(+)
+```
+
+```text
+abc1234 Initial commit - Added README
+```
+
+> Replace the commit hash ID with the actual hash ID shown on your system.
+
+**Screenshot:** *(Paste the screenshot showing the amended commit message and `git log --oneline -1` output.)*
+
