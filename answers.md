@@ -191,3 +191,35 @@ notes.txt
 `features.txt` was created and committed only on the `dev` branch. Since the `main/master` branch does not have that commit, the file is not present after switching back.
 
 **Screenshot:** *(Paste the screenshot of the commands and output here.)*
+
+## Q10. Merge `dev` into `master`. After merging, take a screenshot of `git log --oneline`.
+
+**Commands:**
+
+```bash
+git switch master
+git merge dev
+git log --oneline
+```
+
+**Output (example):**
+
+```text
+Updating 3f4a2b1..7d8e9f0
+Fast-forward
+ features.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 features.txt
+```
+
+```text
+7d8e9f0 Add features file
+6c5b4a3 Update notes
+5b4a3c2 Add notes file
+4a3b2c1 Update README with project description
+3a2b1c0 Update answers.md with title
+2b1c0d9 Add answers.md
+1a0b9c8 Initial commit
+```
+
+**Screenshot:** *(Paste the screenshot of the `git log --oneline` output after merging here.)*
