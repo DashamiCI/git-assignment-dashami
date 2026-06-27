@@ -141,9 +141,7 @@ git branch
   master
 ```
 
-> If your default branch is `main`, the output will show `main` instead of `master`.
-
-**Screenshot:** *(Paste the screenshot of the commands and the branch list here.)*
+![Q7 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20155959.png)
 
 ## Q8. On the `dev` branch, create `features.txt`. Add 3 lines: "Login", "Signup", "Dashboard". Commit the changes.
 
@@ -223,3 +221,23 @@ Fast-forward
 ```
 
 **Screenshot:** *(Paste the screenshot of the `git log --oneline` output after merging here.)*
+
+## Q11. Create a `.gitignore` file. Add `node_modules/` and `*.log` to it. Commit the file.
+
+**Commands:**
+
+```bash
+printf "node_modules/\n*.log\n" > .gitignore
+git add .
+git commit -m "Add .gitignore"
+```
+
+**Output (example):**
+
+```text
+[master abc1234] Add .gitignore
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+```
+
+**Screenshot:** *(Paste the screenshot of the commands and commit output here.)*
