@@ -117,4 +117,5 @@ git commit -m "Commit message"
  1 file changed, 1 insertion(+)
 ```
 
-**Screenshot:** *(Paste the screenshot of the `git log --oneline` output showing all commits here.)*
+**Screenshot:** screenshots/outputs/Screenshot 2026-06-27 153156.png
+screenshots/outputs/Screenshot 2026-06-27 153407.png
