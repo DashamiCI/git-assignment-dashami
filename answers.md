@@ -145,3 +145,22 @@ git branch
 
 **Screenshot:** *(Paste the screenshot of the commands and the branch list here.)*
 
+## Q8. On the `dev` branch, create `features.txt`. Add 3 lines: "Login", "Signup", "Dashboard". Commit the changes.
+
+**Commands:**
+
+```bash
+printf "Login\nSignup\nDashboard\n" > features.txt
+git add .
+git commit -m "Add features file"
+```
+
+**Output (example):**
+
+```text
+[dev abc1234] Add features file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 features.txt
+```
+
+**Screenshot:** *(Paste the screenshot of the commands and commit output here.)*
