@@ -370,7 +370,7 @@ nothing to commit, working tree clean
 
 **Verification:** The changes to `README.md` were successfully discarded, and the working tree is clean.
 
-**Screenshot:** *(Paste the screenshot showing the `git status` output before and after `git restore`.)*
+![Q17 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20165536.png)
 
 ## Q18. The last commit message was wrong. Change it to **"Initial commit - Added README"**.
 
@@ -393,7 +393,106 @@ git log --oneline -1
 abc1234 Initial commit - Added README
 ```
 
-> Replace the commit hash ID with the actual hash ID shown on your system.
+![Q18 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20165838.png)
 
-**Screenshot:** *(Paste the screenshot showing the amended commit message and `git log --oneline -1` output.)*
+## Q19. Conflict Task
 
+### Commands:
+
+```bash
+# On main
+echo "Line from main" > conflict.txt
+git add .
+git commit -m "Add conflict file on main"
+
+# Create branch
+git switch -c conflict-branch
+echo "Line from branch" > conflict.txt
+git add .
+git commit -m "Update conflict file on branch"
+
+# Back to main
+git switch main
+echo "Line from main updated" > conflict.txt
+git add .
+git commit -m "Update conflict file on main"
+
+# Merge
+git merge conflict-branch
+```
+
+**Conflict Output (example):**
+
+```text
+Auto-merging conflict.txt
+CONFLICT (content): Merge conflict in conflict.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+**Resolve the conflict:**
+
+Edit `conflict.txt` to:
+
+```text
+Line from main
+Line from branch
+```
+
+Then run:
+
+```bash
+git add .
+git commit -m "Resolve merge conflict"
+cat conflict.txt
+```
+
+**Final Output:**
+
+```text
+Line from main
+Line from branch
+```
+
+![Q19 Screenshot 1](screenshots/outputs/Screenshot%202026-06-27%20170601.png)
+![Q19 Screenshot 2](screenshots/outputs/Screenshot%202026-06-27%20170636.png)
+![Q19 Screenshot 3](screenshots/outputs/Screenshot%202026-06-27%20170943.png)
+
+## Q20. Fork a colleague's repository and clone it locally. Write the repository name in `answers.md`.
+
+**Command:**
+
+```bash
+git clone https://github.com/DashamiCI/conflict-drill-team.git
+```
+
+**Output (example):**
+
+```text
+Cloning into '<repo-name>'...
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+Receiving objects: 100% (25/25), done.
+Resolving deltas: 100% (5/5), done.
+```
+
+**Repository Name:**
+
+```text
+conflict-drill-team
+```
+
+![Q20 Screenshot 1](screenshots/outputs/Screenshot%202026-06-27%20171434.png)
+![Q20 Screenshot 2](screenshots/outputs/Screenshot%202026-06-27%20165838.png)
+
+## Q21. Add a collaborator to your `git-assignment-YourName` repository.
+
+**Steps:**
+
+1. Open the GitHub repository.
+2. Go to **Settings**.
+3. Click **Collaborators** (or **Collaborators and teams**).
+4. Click **Add people**.
+5. Enter the collaborator's GitHub username or email.
+6. Click **Add** / **Invite**.
+
+![Q21 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20171932.png)
