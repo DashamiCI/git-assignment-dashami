@@ -1,2 +1,2 @@
 Line from branch
-Line from main updated
+Line from main updated.
