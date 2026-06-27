@@ -164,3 +164,30 @@ git commit -m "Add features file"
 ```
 
 **Screenshot:** *(Paste the screenshot of the commands and commit output here.)*
+
+## Q9. Switch back to the `main/master` branch. Is `features.txt` visible? It should not be. Write the reason.
+
+**Commands:**
+
+```bash
+git switch master
+ls
+```
+
+> *(If your default branch is `main`, use `git switch main` instead.)*
+
+**Output (example):**
+
+```text
+README.md
+answers.md
+notes.txt
+```
+
+`features.txt` is **not visible**.
+
+**Reason:**
+
+`features.txt` was created and committed only on the `dev` branch. Since the `main/master` branch does not have that commit, the file is not present after switching back.
+
+**Screenshot:** *(Paste the screenshot of the commands and output here.)*
