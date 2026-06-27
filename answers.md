@@ -14,7 +14,7 @@ git --version
 git version 2.50.1.windows.1
 ```
 
-**Screenshot:** *screenshots/outputs/Screenshot 2026-06-27 143649.png*
+![Q1 Screenshot](screenshots/outputs/Screenshot%202026-06-27%20143649.png)
 
 ## Q2. Set your name and email in global config.
 
